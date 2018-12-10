@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="css/style.css" rel="stylesheet"><!-- Page Stylesheet -->
+    <link href="css/jquery.my-notification-plugin.css" rel="stylesheet"><!-- Plugin Stylesheet -->
+
+    <title>jQuery Notification plugin Demo</title>
+</head>
+
+<body>
+    <div class="container text-center">
+        <h1>jQuery Notification plugin Demo</h1>
+        <form id="input">
+            <h2>Enter a number</h2>
+
+            <input type='number' id="inputNumber" value='' />
+            <button class="btn" type="submit" onclick="checkInput(event)">Validate</button>
+
+            <div class="divTable cinereousTable">
+                <div class="divTableHeading">
+                    <div class="divTableRow">
+                        <div class="divTableHead">Min Value accepted</div>
+                        <div class="divTableHead">Max Value accepted</div>
+                        <div class="divTableHead">Display warning from</div>
+                    </div>
+                </div>
+                <div class="divTableBody">
+                    <div class="divTableRow">
+                        <div class="divTableCell">1</div>
+                        <div class="divTableCell">100</div>
+                        <div class="divTableCell">91</div>
+                    </div>
+                </div>
+            </div>
+            <div class="divTable cinereousTable">
+                <div class="divTableHeading">
+                    <div class="divTableRow">
+                        <div class="divTableHead">Success Settings</div>
+                        <div class="divTableHead">Warn Settings</div>
+                        <div class="divTableHead">Error Settings</div>
+                    </div>
+                </div>
+                <div class="divTableBody">
+                    <div class="divTableRow">
+                        <div class="divTableCell">
+                            state         : 'success',<br />
+                            message       : 'Number you entered in inside valid range !',<br />
+                            position        : 0,<br />
+                            overlay       : true <br />
+                        </div>
+                        <div class="divTableCell">
+                            state         : 'warn', <br />
+                            message       : 'Number you entered is too close to valid range. Lorem ipsum ...', <br />
+                            position      : 100, <br />
+                            overlay       : false, <br />
+                            width         : 50 <br />
+                        </div>
+                        <div class="divTableCell">
+                        state         : 'error', <br />
+                        message       : 'Number entered is not with in allowed range', <br />
+                        position      : 100, <br />
+                        overlay       : true <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--Creates the popup content. Needs to be included close to body-->
+    <div class="my-notification-popup"></div>
+
+    <!-- JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.my-notification-plugin.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

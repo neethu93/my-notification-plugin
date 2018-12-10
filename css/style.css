@@ -1,0 +1,95 @@
+html,body{
+    width: 100%;
+    display: block;
+}
+
+body {
+    margin: 0 auto;
+    font-size: 14px;
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+.container {
+    margin: 0 auto;
+    height: 100vh;
+    z-index: 1;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+input{
+    padding: 12px;
+    width: 5%;
+}
+
+.btn {
+    border-radius: 38px;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    min-width: 150px;
+    border: none;
+    padding: 12px 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: #4b0414;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #8a041f;
+}
+
+div.cinereousTable {
+    border: 1px solid #948473;
+    background-color: #FFE3C6;
+    width: 50%;
+    margin: 30px auto 0;
+}
+
+.divTable.cinereousTable .divTableCell, .divTable.cinereousTable .divTableHead {
+    border: 1px solid #948473;
+    padding: 4px 4px;
+}
+.divTable.cinereousTable .divTableBody .divTableCell {
+    font-size: 13px;
+}
+
+.divTable.cinereousTable .divTableHeading {
+    background: #948473;
+    background: -moz-linear-gradient(top, #afa396 0%, #9e9081 66%, #948473 100%);
+    background: -webkit-linear-gradient(top, #afa396 0%, #9e9081 66%, #948473 100%);
+    background: linear-gradient(to bottom, #afa396 0%, #9e9081 66%, #948473 100%);
+}
+.divTable.cinereousTable .divTableHeading .divTableHead {
+    font-size: 17px;
+    font-weight: bold;
+    color: #F0F0F0;
+    border-left: 2px solid #948473;
+}
+
+.divTable.cinereousTable .divTableHeading .divTableHead:first-child {
+    border-left: none;
+}
+
+.cinereousTable .tableFootStyle {
+    font-size: 16px;
+}
+
+.divTable{ display: table; }
+.divTableRow { display: table-row; }
+.divTableHeading { display: table-header-group;}
+.divTableCell, .divTableHead { display: table-cell;}
+.divTableHeading { display: table-header-group;}
+.divTableFoot { display: table-footer-group;}
+.divTableBody { display: table-row-group;}
