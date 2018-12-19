@@ -7,8 +7,13 @@ function checkInput(event) {
         $.notification({
             state         : 'success',
             message       : 'Number you entered in inside valid range !',
-            position        : 0,
-            overlay       : true
+            position      : 0,
+            overlay       : true,
+            button        : true,
+            btnValue      : 'accept',
+            buttonCallBack: function() {
+                                setCookie("hello","world");
+                              }
         });
     }
     else if (num > 90 && num < 101 ) {
@@ -17,7 +22,9 @@ function checkInput(event) {
             message       : 'Number you entered is too close to valid range. Lorem ipsum has become the industry standard for design mockups and prototypes. Lorem ipsum has become the industry standard for design mockups and prototypes. Lorem ipsum has become the industry standard for design mockups and prototypes. Lorem ipsum has become the industry standard for design mockups and prototypes. Lorem ipsum has become the industry standard for design mockups and prototypes. Lorem ipsum has become the industry standard for design mockups and prototypes.',
             position      : 100,
             overlay       : false,
-            width         : 50
+            width         : 50,
+            button        : false,
+            btnValue      : 'accept'
         });
     }
     else {
@@ -29,3 +36,7 @@ function checkInput(event) {
         });
     }
 };
+
+function setCookie(cname,cvalue) { // function for cookie
+  document.cookie = cname + "=" + cvalue + ";";
+}
